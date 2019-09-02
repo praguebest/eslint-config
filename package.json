@@ -1,0 +1,35 @@
+{
+  "name": "@praguebest/eslint-config",
+  "version": "0.1.0",
+  "description": "Configuration for eslint.",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "javascript",
+    "styleguide"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/praguebest/eslint-config.git"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "bugs": {
+    "url": "https://github.com/praguebest/eslint-config/issues"
+  },
+  "homepage": "https://github.com/praguebest/eslint-config.git",
+  "dependencies": {
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.7.0"
+  },
+  "peerDependencies": {
+    "eslint": "^6.3.0"
+  },
+  "engines": {
+    "node": ">= 10"
+  }
+}
