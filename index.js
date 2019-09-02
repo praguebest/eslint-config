@@ -1,25 +1,23 @@
 module.exports = {
+  extends: ['eslint-config-airbnb-base'],
   parserOptions: {
-      ecmaVersion: 10,
-      sourceType: 'module'
+    ecmaVersion: 10,
+    sourceType: 'module',
   },
-  extends: [
-      'airbnb'
-  ],
   rules: {
-    "import/order": ["error", {
-      "groups": ["builtin", "external", "internal", "parent", "sibling", "index"]
+    'func-names': ['error', 'as-needed'],
+    'import/order': ['error', {
+      groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index'],
     }],
-    "no-multiple-empty-lines": ["error", { "max": 1 }],
-    "object-curly-newline": ["error", {
-      "multiline": true,
-      "minProperties": 2,
-      "consistent": true
+    'no-multiple-empty-lines': ['error', { max: 1 }],
+    'no-undef-init': ['error'],
+    'object-curly-newline': ['error', {
+      consistent: true,
+      minProperties: 2,
+      multiline: true,
     }],
-    "object-curly-spacing": ["error", "always"],
-    "object-property-newline": ["error", { "allowMultiplePropertiesPerLine": false }],
-    "sort-keys": ["error", "asc"],
-    "no-undef-init": ["error"]
-
-  }
+    'object-curly-spacing': ['error', 'always'],
+    'object-property-newline': ['error', { allowMultiplePropertiesPerLine: false }],
+    'sort-keys': ['error', 'asc'],
+  },
 };

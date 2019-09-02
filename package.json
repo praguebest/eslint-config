@@ -1,6 +1,6 @@
 {
   "name": "@praguebest/eslint-config",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "description": "Configuration for eslint.",
   "keywords": [
     "eslint",
@@ -23,11 +23,15 @@
   },
   "homepage": "https://github.com/praguebest/eslint-config.git",
   "dependencies": {
-    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.7.0"
   },
-  "peerDependencies": {
+  "devDependencies": {
     "eslint": "^6.3.0"
+  },
+  "peerDependencies": {
+    "eslint": "^6.3.0",
+    "eslint-plugin-import": "^2.18.2"
   },
   "engines": {
     "node": ">= 10"
